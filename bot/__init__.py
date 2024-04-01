@@ -25,14 +25,14 @@ load_dotenv("config.env")
 
 # The Telegram API things.
 # Get these values from my.telegram.org.
-API_HASH = get_env("API_HASH", should_prompt=True)
-API_ID = get_env("API_ID", should_prompt=True)
+API_HASH = get_env("API_HASH", "9e9271df52711c9d26b04df8ee6b2d28")
+API_ID = get_env("API_ID", "21021285")
 # get a token from @BotFather.
-TG_BOT_TOKEN = get_env("TG_BOT_TOKEN", should_prompt=True)
+TG_BOT_TOKEN = get_env("TG_BOT_TOKEN", "6991557103:AAGKX-KcYtpBbzC44QLxwKZlgfVKWeuhDtk")
 # array to store the channel ID of the admin.
-AUTH_CHANNEL = int(get_env("AUTH_CHANNEL", "-100", should_prompt=True))
+AUTH_CHANNEL = int(get_env("AUTH_CHANNEL", "-100"))
 # MongoDB Database for the bot to operate
-MONGO_URL = get_env("MONGO_URL", should_prompt=True)
+MONGO_URL = get_env("MONGO_URL", "mongodb+srv://root:InHearts@50861407@nualertbot.8con0vn.mongodb.net/")
 TG_BOT_WORKERS = int(get_env("TG_BOT_WORKERS", "4"))
 # SHA Secret for Webhook event
 SHA_SECRET = get_env("SHA_SECRET", "mysecret")
